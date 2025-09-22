@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let name=prompt("Enter your name");
+        let income=prompt("Enter your income");
+        income=parseInt(income);
+
+         if(income<=0){
+            alert("invalide income");
+         }
+  else{
+
+      
+            let a= prompt("Enter your how much expance you have");
+          a=parseInt(a);
+          let array=[];
+          let b,exp=0;
+        for(let i=0; i<a ; i++){
+
+     
+          
+            array[i]=parseInt(prompt("Enter your expance"));
+          //b=prompt("Enter your expance"+i);
+          //b=parseInt(b);
+
+    //document.writeln(array[i]);
+       
+        }
+
+        for(let j=0;j<array.length; j++)
+        {
+         if( array[j]<=0)
+          {
+           alert("enter the valid inpute");
+           break;
+          }
+          else{
+          exp=exp+array[j];
+          }
+          //document.writeln(array[j]);
+        }
+ console.log(array);
+        console.log(exp);
+    
+
+        if(income<exp ){
+            alert("Warning !!  you are spending more then your income");
+        }
+
+        else if(exp==0)
+        {
+            alert("not valid inpute  try again");
+        }
+        else{
+
+        
+     document.writeln(`User:${name} <br>`);
+
+        document.writeln(`Total income is : ${income} <br>`);
+        document.writeln(`Total Expanse: ${exp} <br>`)
+       
+        let tax=income*(10/100);
+        document.writeln(`Tax Deducted (10%): ${tax} <br>`);
+
+        let net=income-tax;
+        document.writeln(`Net income After tax: ${net} <br>`);
+
+        let rem=net-exp;
+        document.writeln(`Remaining Blance : ${rem} <br>`);
+
+        let sev=rem*(20/100);
+        document.writeln(`Seaving: ${sev} <br>`);
+
+        if(sev>=1000){
+            document.writeln(`Excellent Score: ${sev} <br>`);
+        }
+        else if(sev>=500 && sev<=999){
+            document.writeln(`good Score: ${sev} <br>`);
+        }
+        else if(sev>=100 || sev<=499){
+            document.writeln(`Needs improvement: ${sev} <br>`);
+        }
+     else{
+        document.writeln(`critical: ${sev} <br>`);
+     }
+
+       let result = {
+  name: name,
+  income: income,
+  expense: exp,
+  tax: tax,
+  net: net,
+  remaining: rem,
+  saving: sev
+};
+
+
+  function budgetApp(abcd) {
+
+
+return localStorage.setItem("budgetData", JSON.stringify(result));
+}
+
+let kes=budgetApp(result);
+
+function show(){
+ let showdata=JSON.parse(localStorage.getItem("budgetData"));
+
+ return showdata;
+}
+ show();
+
+ console.log(show());
+ 
+
+
+}
+
+
+
+ 
+  }
+
+
+
+
+ 
+    </script>
+</body>
+</html>

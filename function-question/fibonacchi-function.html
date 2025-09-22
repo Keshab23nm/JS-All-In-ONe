@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Write a function to print Fibonacci series up to n terms.
+//Input: fibonacci(5) → Output: 0, 1, 1, 2, 3
+        let num=prompt("enter the number :");
+          num=parseInt(num);
+
+        function fibo(x){
+            let first=0;
+            let second=1;
+             if(x<=0)
+             {
+                document.writeln("you enter the wrong inpute");
+             }
+             else if(x===2)
+             {
+                document.writeln(second);
+             }
+             else if(x===1){
+             document.writeln(first);
+
+             }
+        else{
+            document.writeln(`${first} ${second}`);
+
+            for(let i=3;i<=x;i++){
+                let dig=first+second;
+                document.writeln(`${dig}`);
+                first=second;
+                second=dig;
+            }
+        }
+        }
+      fibo(num);
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      //Check Perfect Number: Take a number and check if it’s a perfect number (sum of its divisors excluding itself equals the number, e.g., 6 → 1+2+3=6). dont give me the code
+
+      let num=prompt("enter tyhe number :");
+      num=parseFloat(num);
+      let sum=0;
+ let org=num;
+      for(let i=1;i<=num/2;i++)
+      {
+        if(num%i==0)
+      {
+        sum=sum+i;
+        console.log(sum);
+      }
+      }
+  if(org==sum){
+    document.writeln(`${org} is the perfect number`);
+  }
+  else{
+    document.writeln(`${org} is not a perfect number`);
+  }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let kes="hello";
+       let mns= kes.split("");
+        console.log(mns);
+
+
+        function vowelcon(mns,cns){
+            let count=0;
+      
+        
+  for (let i=0;i<mns.length;i++)
+  {
+   if("a"==mns[i]){
+    count++;
+   }
+   else if("e"==mns[i])
+   {
+    count++;
+   }
+    else if("i"==mns[i])
+   {
+     count++;
+   }
+    else if("o"==mns[i])
+   {
+         count++;
+   }
+    else if("u"==mns[i])
+   {
+      count++;
+   }
+
+
+  }
+ return count;
+
+        }
+        
+   let k=vowelcon(mns);
+
+  document.writeln("the number of vowel : "+k+"<br>");
+
+
+    </script>
+</body>
+</html>

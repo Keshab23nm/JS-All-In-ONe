@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arry=[];
+        for(let i=0;i<10;i++)
+    {
+          arry[i]=parseInt(prompt("enter the number "));
+    }
+    let oddcount=0;
+    let evencount=0;
+    for(let i=0;i<arry.length;i++)
+    {
+        if(arry[i] % 2 == 0){
+            document.writeln(arry[i]+"<br>");
+            evencount++;
+        }
+        else{
+            console.log(arry[i]);
+            oddcount++;
+        }
+    }
+    document.writeln(`total even number is ${evencount} <br>`);
+    document.writeln(`total odd number is ${oddcount} <br>`);
+
+    </script>
+</body>
+</html>

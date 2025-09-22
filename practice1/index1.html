@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Make a simple calculator using switch (user enters two numbers and an operator + - * /).
+        
+        let a=prompt("enter the number :");
+        a=parseInt(a);
+
+        let b=prompt("enter the second numbre :");
+        b=parseInt(b);
+
+        let c=prompt("enter the operater:");
+       
+          let e=0;
+        switch(c){
+            case "+" :
+           e=a+b;
+           document.writeln(`addi of ${e} <br> `)
+           break;
+             case "-" :
+           e=a-b;
+           document.writeln(`sub of ${e} <br> `)
+           break;
+             case "*" :
+           e=a*b;
+           document.writeln(`multi of ${e} <br> `)
+           break;
+             case "/" :
+           e=a/b;
+           document.writeln(`dive of ${e} <br> `)
+           break;
+             case "%" :
+           e=a%b;
+           document.writeln(`module of ${e} <br> `)
+           break;
+             default :
+            document.writeln("wrong inpute");
+
+        }
+    </script>
+</body>
+</html>

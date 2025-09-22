@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let name=prompt("Enter your name");
+        let income=prompt("Enter your income");
+        let exp=prompt("Enter your expance");
+        income=parseInt(income);
+        exp=parseInt(exp);
+
+        if(income<exp){
+            alert("Warning !!  you are spending mkore then your income");
+        }
+        else{
+
+     
+       
+        document.writeln(`User:${name} <br>`);
+
+        document.writeln(`Total income is : ${income} <br>`);
+        document.writeln(`Total Expanse: ${exp} <br>`)
+       
+        let tax=income*(10/100);
+        document.writeln(`Tax Deducted (10%): ${tax} <br>`);
+
+        let net=income-tax;
+        document.writeln(`Net income After tax: ${net} <br>`);
+
+        let rem=net-exp;
+        document.writeln(`Remaining Blance : ${rem} <br>`);
+
+        let sev=rem*(20/100);
+        document.writeln(`Seaving: ${sev} <br>`);
+
+        if(sev>=1000){
+            document.writeln(`Excellent Score: ${sev} <br>`);
+        }
+        else if(sev>=500 && sev<=999){
+            document.writeln(`good Score: ${sev} <br>`);
+        }
+        else if(sev>=100 || sev<=499){
+            document.writeln(`Needs improvement: ${sev} <br>`);
+        }
+     else{
+        document.writeln(`critical: ${sev} <br>`);
+     }
+
+    }
+ 
+    </script>
+</body>
+</html>

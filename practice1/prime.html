@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // prime number
+ let a=prompt("enterthe number :");
+        a=parseInt(a);
+
+        if(a<2){
+            document.writeln("not a prime");
+
+        }
+        else if(a==2 || a==3){
+            document.writeln("prime");
+        }
+        else if(a%2==0){
+            document.writeln("not prime ");
+
+        }
+        else{
+            let limit=Math.sqrt(a);
+            for(let i=3;i<=limit;i+2){
+                if(a%i==0)
+            {
+                document.writeln("not a prime");
+
+            }
+            else{
+                document.writeln("prime");
+            }
+            }
+        }
+    </script>
+</body>
+</html>

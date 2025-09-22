@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // just chack the number 
+
+       let num=prompt("enter the number :");
+        num=parseInt(num);
+
+        if(num%5==0 && num%11==0)
+    {
+        document.writeln("yes");
+    }
+    
+    else{
+     document.writeln(`you enter ${num}  number `);
+    }
+
+// factrioal of a number
+    /*let num=prompt("enter the number :");
+     num=parseInt(num);
+
+     fact=1;
+     for(let i=1;i<=num;i++)
+     {
+        fact=fact*i;
+     }
+
+      document.writeln(fact);*/
+
+//  fibonacchin number
+      /*let num=prompt("enter the number ");
+      num=parseInt(num);
+
+      first=0;
+      second=1;
+      document.writeln(`${first} ${second}`);
+      for(let i=3;i<=num;i++)
+      {
+        let dig=first+second;
+        document.writeln(`${di}`);
+        first=second;
+        second=dig;
+      }*/
+
+
+  /*    let num2=prompt("enter the number:");
+      num2=parseInt(num2);
+      let org=num2;
+  let sum=0;
+      while(num2!=0)
+      {
+        let dig=num2%10;
+        sum=sum+dig*dig*dig;
+        num2=Math.floor(num2/10);
+
+      }
+      //console.log(sum);
+console.log(org);
+//153document.writeln(sum);
+if(org==sum)
+{
+    console.log(org,sum);
+    document.writeln(`${sum} the number is Armstrong`);
+}
+else{
+    document.writeln(`${org} the number is not a Armstrong number`);
+}
+*/
+    </script>
+</body>
+</html>

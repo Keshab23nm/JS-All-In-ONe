@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //IIFEs(immediately invokeable function expressions)
+        (function display(){
+         console.log("hellow");
+
+        })();
+// iifes print sum of two numbers
+
+(function add(num1,num2){
+    let c=num1+num2;
+    console.log(c);
+})(5,5);
+        //function expression
+
+        let fun=function display2(mass){// it called function expression
+            console.log(mass);
+        }
+        fun("hellow world");
+    </script>
+</body>
+</html>

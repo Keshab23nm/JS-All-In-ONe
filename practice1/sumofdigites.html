@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Find the sum of digits of a number.
+
+//Input: 123 → Output: 1+2+3=6
+
+
+        let num=prompt("enter the number :");
+         num=parseInt(num);
+       let sum=0;
+         while(num!=0){
+            let dig=num%10;
+            sum=sum+dig;
+            num=Math.floor(num/10);
+         }
+         console.log(sum);
+    </script>
+</body>
+</html>

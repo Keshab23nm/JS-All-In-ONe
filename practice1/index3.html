@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Reverse the digits of a number (e.g., input 123 → output 321).
+      let a=prompt("enter the value:");
+      a=parseInt(a);
+
+      let res=0;
+  let digit;
+      while(a>0){
+     digit=a%10;
+     res=res*10+digit;
+     a=Math.floor(a/10);
+      }
+  document.writeln(res);
+    </script>
+</body>
+</html>

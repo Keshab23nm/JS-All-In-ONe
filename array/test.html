@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // fiend highest number in the array 
+        let array=[];
+        for(let i=0;i<5;i++)
+    {
+        array[i]=parseInt(prompt("enter number  "));
+
+    }
+    console.log(array);
+        function hello(arr){
+
+          let result=arr[0]; 
+
+          for(let i=1;i<arr.length;i++)
+          {
+            //console.log(arr[i]);
+            if(result<arr[i])
+          {
+            result=arr[i];
+          }
+          }
+         return result;
+
+        }
+
+        let k=hello(array);
+        document.writeln(`the highest number is ${k}`);
+    </script>
+</body>
+</html>

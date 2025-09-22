@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // to chack a number how may even and odd number present into the number
+        let num=prompt("enter the number :");
+        num=parseInt(num);
+
+        let even=0;
+        let odd=0;
+       while(num!=0)
+       {
+        let dig=num%10;
+        if(dig%2==0){
+           even++;
+        }
+        else{
+            odd++;
+        }
+        num=Math.floor(num/10);
+
+       }
+
+      console.log(`the total Even number is :${even}`);
+      console.log(`the total Odd number is :${odd}`);
+     
+     
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=prompt("Enter the first number");
+        let b=prompt("Enter the last number");
+         a=parseInt(a);
+         b=parseInt(b);
+         if(a==1 && b==100){
+
+       //document.writeln("all good ");
+         document.writeln("outpute <br> <br>");
+       for(a;a<=b;a++){
+        if(a%3==0 && a%5==0){
+            document.writeln(` FizzBuzz <br>`);
+         
+        }
+        else if(a%5==0){
+            document.writeln(`${a} Buzz <br>`);
+          
+        }
+        else if(a%3==0 ){
+            document.writeln(`${a} Fizz <br>`);
+         
+        }
+        else{
+document.writeln(""+a+"<br>");
+        }
+        
+       }
+
+         }
+         else{
+            alert("!! Enter first 1 and last number 100");
+         }
+
+
+    </script>
+</body>
+</html>

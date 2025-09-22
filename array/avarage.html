@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let  arr=[];
+        for(let i=0;i<5;i++)
+    {
+        arr[i]=parseInt(prompt("enter the number :"));
+
+    }
+    document.writeln(arr);
+     let positive=false;
+    for(let i=0;i<arr.length;i++)
+    {
+       if(arr[i]>0 || isNaN(arr[i]))
+       {
+        positive=true;
+       }
+    }
+
+
+
+
+
+
+   if(positive==true){
+
+
+  let arrlen=arr.length;
+  let sum=0;
+    for(let i=0;i<arr.length;i++)
+    {
+        sum=sum+arr[i];
+    }
+    let avg;
+    document.writeln(arrlen);
+    console.log(arr);
+    console.log(sum);
+     avg=sum/arrlen;
+     console.log(avg);
+     }
+     else
+     {
+        document.writeln("wrong inpute");
+     }
+    </script>
+</body>
+</html>

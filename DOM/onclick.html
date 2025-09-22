@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button  onclick="main()">hello</button>
+        <h1 onclick="upper()">india</h1>
+
+
+<a  href="#" target="_blank">abcd</a>
+        
+        <button onclick="button1()">Button1</button>
+        <button onclick="button2()">Button2</button>
+
+        <p  id="para1">hello world</p>
+
+           <button onclick="img1()">Images1</button>
+           <button onclick="button2()">images2</button>
+
+ <p></p>
+    <img  id="imges"  height="300"  src="#"  width="300" style="border: none;" alt="">
+
+
+    <script>
+
+let abc=document.querySelector("#imges");
+function img1(){
+abc.src="task001.png";
+}
+
+
+
+
+
+
+    let kes=document.querySelector("#para1");
+        function button1(){
+          kes.innerHTML="you  click on  button one :1";
+        }
+           function button2(){
+          kes.innerHTML="you  click on  button two :2";
+        }
+
+
+
+
+        function  main(){
+        alert("hello everyone");
+        }
+
+let go=document.querySelector("a");
+go.href="https://google.com/";
+
+        function upper(){
+            document.querySelector("h1").innerHTML="INDIA";
+          
+        }
+
+
+
+
+  
+    </script>
+</body>
+</html>

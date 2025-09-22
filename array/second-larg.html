@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       // gussing game
+
+        alert("The rule is: You have 5 chances to guess the number between 1 and 20.");
+
+
+        let trya=false;
+        let number;
+         let kes=Math.floor(Math.random()*21+1);
+        //document.writeln(`the actual number is ${kes} <br>`);
+        document.writeln("your enter number is :: <br>");
+        for(let i=0;i<5;i++)
+    {
+ let num =parseInt(prompt("enter the number :"));
+
+
+if(num===kes)
+{
+    trya=true;
+    number=num;
+    break;
+}
+
+    document.writeln(`${num} <br>`);
+
+
+    }
+
+   if (trya == true) {
+    document.writeln(`🎉 WOW! You guessed it right. The number was ${number}. You won!`);
+} else {
+    document.writeln(`❌ Sorry, you lost. The correct number was ${kes}.`);
+}
+      
+
+    </script>
+</body>
+</html>

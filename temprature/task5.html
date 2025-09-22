@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // to calculate the income 
+
+        let nam=prompt("Enter your Name :");
+        document.writeln("User:"+nam +"<br>");
+
+        let total=prompt("Enter your total  income");
+        document.writeln("Total Income :"+total+"<br>");
+
+           let expanc=prompt("Enter your total  Expanses");
+        document.writeln("Total Expanses :"+expanc+"<br>");
+     
+            let tax= total*10/100;
+
+        document.writeln("Tax Deducted :"+tax+"<br>");
+
+           let net=total-tax;
+
+        document.writeln("Total Net Income After Tax:"+net+"<br>");
+
+           let rem=net-expanc;
+        document.writeln("Remaining Blance:"+rem+"<br>");
+
+           let sev=rem*20/100;
+        document.writeln(`Savings (20% of Blance) :${sev}<br>`);
+
+        let cash=rem-sev;
+
+        document.writeln(`Blance in Hand ${cash} <br>`);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       let num = prompt("enter the number:");
+num = parseInt(num);
+
+let sum = 0;
+let original = num;
+
+while (num != 0) {
+    let dig = num % 10;
+    let fact = 1;
+
+    for (let i = dig; i > 0; i--) {
+        fact = fact * i;  
+    }
+
+    sum = sum + fact;  
+    num = Math.floor(num / 10); 
+}
+
+document.writeln(`Sum of factorials = ${sum}<br>`);
+
+if (sum === original) {
+    document.writeln(`${original} is a Strong number`);
+} else {
+    document.writeln(`${original} is not a Strong number`);
+}
+
+
+  /*      for(let i=5;i>0;i--)
+    {
+        document.writeln(i);
+    }
+*/
+    </script>
+</body>
+</html>

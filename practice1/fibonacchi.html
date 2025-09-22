@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //fibonacchi number
+      let n=prompt("enter the number ");
+      n=parseInt(n);
+     let first=0;
+     let second=1;
+     let ne=0;
+     document.writeln(first,second);
+      for(let i=3;i<=n;i++)
+      {
+         ne=first+second;//0+1=1,,1+1=2,,1+2=3
+        document.writeln(ne);//1,2,3
+        first=second;//1,,1,2
+        second=ne;//1,,2,,3
+        console.log(i);
+
+      }
+
+    </script>
+</body>
+</html>

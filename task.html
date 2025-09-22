@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+
+        //test program 
+     /*   let array=[];
+        for(let i=0;i<=5;i++)
+    {
+        array[i]=parseInt(prompt("enter the number "));
+    }
+
+    let sum=0;
+        function highestscore (arr){
+          console.log(arr);
+        for(let j=0;j<=5;j++)
+        {
+            console.log(arr[j]);
+            sum=sum+arr[j];
+
+        }
+         console.log(sum);
+          return arr;
+        }
+       let r= highestscore(array);
+       document.writeln(r);*/
+
+// task 8
+
+
+       let array=[];
+        for(let i=0;i<=5;i++)
+    {
+        array[i]=parseInt(prompt("enter the number "));
+    }
+
+  
+        function highestscore (arr){
+          //console.log(arr[0]);
+          let max=arr[0];
+
+        for(let j=1;j<arr.length;j++)
+        {
+           if(max<arr[j]) 
+           {
+            max=arr[j];
+           }
+
+        }
+        console.log(arr);
+          return max;
+        }
+       let r= highestscore(array);
+       document.writeln(r);
+    </script>
+</body>
+</html>

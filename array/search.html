@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Search in array Write a program to input 5 numbers in an array and check if a given number exists inside it.
+        let arr=[];
+        for(let i=0;i<5;i++){
+            arr[i]=parseInt(prompt("enter the number :"));
+        }
+        console.log(arr);
+        let num=parseInt(prompt("enter any number "));
+ let found=0;
+        for(let i=0;i<arr.length;i++)
+        {
+            if(num===arr[i])
+        {
+          found=1;
+        
+        }
+    
+        }
+if(found){
+    document.writeln("the number is found");
+}
+else{
+    document.writeln("the number is not found");
+}
+    </script>
+</body>
+</html>

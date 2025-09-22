@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // write a program to prient the oute pute the palindrom of number
+        let num=prompt("enter the number:");
+        num=parseInt(num);
+        let org=num;
+  let rev=0;
+  let dig;
+        while(num!=0)
+        {
+             dig=num%10;
+            rev=rev*10+dig;
+            num=Math.floor(num/10);
+        }
+ console.log(rev,org);
+ let k=rev;
+  if(org==k){
+    document.writeln(`this number is ${rev} palindrome`);
+   
+  }
+  else{
+    document.writeln(`this number is not a palindrome`);
+  }
+    </script>
+</body>
+</html>
